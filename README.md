@@ -1,6 +1,6 @@
 # HistoMaps
 
-## The fastest image annotation system in the world!
+## The fastest gigascale image annotation system in the world!
 
 ### An efficient annotation storage/visualization/editing framework that can be coupled with existing web-frameworks (e.g. openslide+openseadragon) to visualize tissue images.
 
