@@ -1,4 +1,4 @@
-# HistoMaps
+# HistoloMaps
 
 ## The fastest gigascale image annotation system in the world!
 
