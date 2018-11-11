@@ -4,7 +4,6 @@
 
 ### An efficient annotation storage/visualization/editing framework that can be coupled with existing web-frameworks (e.g. openslide+openseadragon) to visualize tissue images.
 
-## Awesome Logo
 ![LOGO](./images/logo.png)
 
 ### You can make a free DOI with zenodo <link>
