@@ -13,8 +13,6 @@
     <script src="js/eventify.js"></script>
     <script src="js/kinetic.js"></script>
     <script src="js/panzoom.js"></script>
-    <!-- <script src="js/bundle.js"></script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/sketch-js@1.1.3/js/sketch.js"></script> -->
     <script src="js/stats.min.js"></script>
 
 
@@ -226,56 +224,6 @@
                               }
                               mesh.geometry.computeBoundingSphere();
                           }); */
-
-                    /* fetch("ccRCC_Slide_Tumor.json").then((r) => r.json())
-                        .then(function (data) {
-                            //   var positions = mesh.geometry.attributes.position.array;
-                            let lod = new THREE.LOD();
-
-                            for (var i = 0; i < data.Regions.length; i++) {
-                                let geometrySub = new THREE.Geometry();
-
-                                var json = data.Regions[i].path[1];
-                                for (var j = 0; j < json.segments.length; j++) {
-
-                                    geometrySub.vertices.push(new THREE.Vector3(
-                                        json.segments[j][0] - (imagingHelper.imgWidth / 2),
-                                        (imagingHelper.imgHeight / 2) - json.segments[j][1],
-                                        0
-                                    ));
-                                }
-                                let color = "rgb(" + json.fillColor.map(x => Math.round(x * 100) + "%").join(" ,") + ")";
-                                let materialSub = new THREE.MeshBasicMaterial({ color: new THREE.Color(color), linewidth: 50 });
-                                let meshSub = new THREE.LineLoop(geometrySub, materialSub);
-                                meshSub.geometry.computeBoundingSphere();
-                                scene.add(meshSub);
-
-                            }
-                            console.log(THREE.VertexColors);
-                            mesh.geometry.computeBoundingSphere();
-                        }); */
-
-                    /*  fetch("ccRCC_Slide_Tumor.json").then((r) => r.json())
-                         .then(function (data) {
-                             //   var positions = mesh.geometry.attributes.position.array;
-                             for (var i = 0; i < data.Regions.length; i++) {
-                                 // let geometrySub = new THREE.Geometry();
-                                 let shape = new THREE.Shape();
- 
-                                 var json = data.Regions[i].path[1].segments;
-                                 shape.moveTo(json[0][0] - (imagingHelper.imgWidth / 2), (imagingHelper.imgHeight / 2) - json[0][1]);
-                                 for (var j = 0; j < json.length; j++) {
-                                     shape.lineTo(json[j][0] - (imagingHelper.imgWidth / 2), (imagingHelper.imgHeight / 2) - json[j][1]);
-                                 }
-                                 shape.lineTo(json[0][0] - (imagingHelper.imgWidth / 2), (imagingHelper.imgHeight / 2) - json[0][1]);
-                                 let materialSub = new THREE.LineBasicMaterial({ color: 0x000000, linewidth: 2 });
-                                 let meshSub = new THREE.LineLoop(new THREE.ShapeGeometry(shape), materialSub);
-                                 meshSub.geometry.computeBoundingSphere();
-                                 scene.add(meshSub);
- 
-                             }
-                             mesh.geometry.computeBoundingSphere();
-                         }); */
 
                     fetch("ccRCC_Slide_Tumor.json").then((r) => r.json())
                         .then(function (data) {
